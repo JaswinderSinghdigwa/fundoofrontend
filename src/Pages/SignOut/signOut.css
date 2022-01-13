@@ -1,0 +1,79 @@
+.Box-class{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.form-class{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 70vh;
+    padding: 30px;
+}
+.google{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.heading{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+#email{
+    width:30vw;
+    display: flex;
+    justify-content: center;
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+.link{
+    display: flex;
+    justify-content: space-between;
+}
+#text-none{
+    text-decoration: none;
+}
+.link, a{
+    text-decoration: none;
+}
+.password-rectangle{
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.email{
+    display: flex;
+    justify-content: space-between;
+}
+.Img-class{
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    border: 2px solid gainsboro;
+    border-radius: 12px;
+}
+
+.Large-Box{
+    border: 1px solid gainsboro;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+}
+.button{
+    display: flex;
+    justify-content: space-between;
+}
