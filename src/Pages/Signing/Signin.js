@@ -9,9 +9,8 @@ const passRegex = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
 export default function Signin() {
     const [email,setEmail] = React.useState("");
     const [password,setPassword] = React.useState("");
-    const [emailborder,setEmailborder] = React.useState(false)
-    const [passwordborder,setpasswordborder] = React.useState(false);
-    const [regexobj,setregexobj]= React.useState(false);
+    const [regexobj, setregexobj] = React.useState({emailborder:false, passwordborder:false})
+    const [regexhelpertext,setregexhelpertext]=React.useState({emailhelpertext:"",passwordhelpertext:""})
         
     const takeEmail = (e)=>{
        setEmail(e.target.value);
@@ -27,26 +26,21 @@ export default function Signin() {
         else{
             let emailtest=emailRegex.test(email)
             let passwordtest=passRegex.test(password)
-            console.log(emailtest);
             if(emailtest){
-                console.log("Hello");
-                setregexobj({...regexobj,emailborder:false})
+                setregexobj(regexobj=>({...regexobj,emailborder:false}))
                 setregexhelpertext({...regexhelpertext,emailhelpertext:""})
             }
             else{
-                console.log(emailtest);
-                setregexobj({...regexobj,emailborder:true})
-                setregexhelpertext({...regexhelpertext,emailhelpertext:"Enter a correct Email"})
+                setregexobj(regexobj=>({...regexobj,emailborder:true}))
+                setregexhelpertext({emailhelpertext:"Enter a correct Email"})
             }
-            console.log(regexobj)
             if(passwordtest){
-                setregexobj({...regexobj,passwordborder:false})
+                setregexobj(regexobj=>({...regexobj,passwordborder:false}))
                 setregexhelpertext({...regexhelpertext,passwordhelpertext:""})
             }
             else{
-                setregexobj({...regexobj,passwordborder:true})
+                setregexobj(regexobj=>({...regexobj,passwordborder:true}))
                 setregexhelpertext({...regexhelpertext,passwordhelpertext:"Enter a correct password"})
-
             }
         }
 
@@ -72,7 +66,7 @@ export default function Signin() {
                     <TextField id="Email" onChange={takeEmail} helperText={regexhelpertext.emailhelpertext} error={regexobj.emailborder} label="Email or Phone" size='small' variant="outlined" />
                 </div>
                 <div className="password">
-                <TextField id="password" onChange={takePassword} helperText={regexhelpertext.passwordhelpertext} error={regexobj.passwordborder}label="Password" size='small' variant="outlined" />
+                <TextField id="password" onChange={takePassword} helperText={regexhelpertext.passwordhelpertext} error={regexobj.passwordborder} label="Password" size='small' variant="outlined" />
                 </div>
                 <div className='textletter'>
                     Not your computer? Use Guest mode to sign in privately.</div>
