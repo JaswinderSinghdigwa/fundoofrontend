@@ -53,7 +53,8 @@ export default function Signin() {
                 if(!res){
                     console.log(res)
                 }else if(res){
-                    console.log(res)
+                    console.log(res.data)
+                    localStorage.setItem("token",res.data.response.data)
                 }
                     console.log(obj);
                }

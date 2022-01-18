@@ -3,16 +3,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 .form-class{
     position: relative;
     display: flex;
     flex-direction: column;
     width: 40vw;
-    height: 75vh;
-    padding: 40px 40px;
-    border:0px
+    height: 80vh;
+    padding: 20px 40px;
+    border:0px !important
 }
 .google{
     display: flex;
@@ -46,7 +46,7 @@
     text-decoration: none;
 }
 .password-rectangle{
-    margin: 20px 0px;
+    margin: 0px 0px;
     display: flex;
     justify-content: space-between;
 }
