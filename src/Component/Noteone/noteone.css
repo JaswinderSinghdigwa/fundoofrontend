@@ -1,0 +1,18 @@
+.note{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.note input{
+    
+}
+
+.setField{
+    width: 30vw;
+    height: 10vh;
+    border: 1px solid gainsboro;
+    font-size: 20px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px;
+    background: white
+}

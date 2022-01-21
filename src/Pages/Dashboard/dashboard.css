@@ -1,0 +1,33 @@
+.notes-container{
+    height: 60vh;
+    width: 83vw;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    left: 150px;
+    top: 50px;
+    display: flex;
+    justify-content: flex-start;
+}
+.note-box{
+    width: 240px;
+    height: 150px;
+    margin: 30px;
+    border: 1px solid gainsboro;
+    padding: 20px;
+    border-radius: 10px;
+}
+.containerNoteFour{
+    height: 33.3%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.iconHolder{
+    margin-top: 100px;
+}
+/* *{
+    margin:0px;
+    padding:0px
+} */

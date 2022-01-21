@@ -3,11 +3,13 @@ import './Signin.css';
 import { login } from '../../Service/service'
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import { useHistory } from 'react-router-dom';
 const emailRegex = /^[a-zA-Z]+[a-zA-Z0-9]*[- . + _]?[a-zA-Z0-9]+[@]{1}[a-z0-9]+[.]{1}[a-z]+[.]?[a-z]+$/;
 const passRegex = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
 
 
 export default function Signin() {
+    let history = useHistory()
     const [email, setEmail] = React.useState("");
     const [password, setPassword] = React.useState("");
     const [regexobj, setregexobj] = React.useState({ emailborder: false, passwordborder: false })
@@ -54,7 +56,9 @@ export default function Signin() {
                     console.log(res)
                 }else if(res){
                     console.log(res.data)
-                    localStorage.setItem("token",res.data.response.data)
+                    localStorage.setItem("token",res.data.response.token)
+                    localStorage.setItem("id",res.data.response.id)
+                    history.push("/Dashboard")
                 }
                     console.log(obj);
                }

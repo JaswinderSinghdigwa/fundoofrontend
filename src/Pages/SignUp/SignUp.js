@@ -5,7 +5,7 @@ import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import Button from '@mui/material/Button';
-import googleimage from '../../gi.jpeg'
+import images from '../../image/images.jpg'
 const firstnameRegex = /^[A-Z]{1}[a-z]{2,}/; 
 const lastnameRegex = /^[A-Z]{1}[a-z]{2,}/; 
 const passwordRegex = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
@@ -170,7 +170,7 @@ export default function Signup() {
                     </div>
                 </div>
                 <div className="Img-class" >
-                    <img src={googleimage}></img>
+                    <img src={images}></img>
                 </div>
             </div>
         </div>

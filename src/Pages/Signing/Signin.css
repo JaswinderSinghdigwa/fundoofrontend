@@ -10,8 +10,8 @@
     display: flex;
     flex-direction: column;
     width: 25vw;
-    height: 60vh;
-    border: 1px solid gainsboro;
+    height: 60vh !important;
+    border: 1px solid gainsboro !important;
     border-radius: 12px;
 }
 .google{

@@ -1,14 +1,68 @@
-.noteContainerTwo{
+.containerNoteOne{
     display: flex;
-    justify-content: column;
-    width:40vw;
-    height:30vh;
-    border-radius: 5px;
-    align-items: center;
+    flex-direction: column;
+    width: 40vw;
+    height: 150px;
+    border: 2px solid gray;
+    border-radius: 7px;
+    justify-content: center;
+    margin-top: 70px;
+    padding: 40px;
+    box-shadow: 3px 3px 3px;
 }
-.childOneNoteTwo{
+.notesHolders{
+    display: flex;
+    justify-content: center;
+}
+
+.containernotetwo{
+    height: 33.3%;
+    width: 100%;
+    margin-bottom: 6px;
+}
+.containerNoteThree{
+    height: 33.3%;
+    width: 100%;
+    margin: 19px 0px;
+}
+.containerNoteThree ,input{
+    background-color: none;
+}
+.containerNoteFour{
+    height: 33.3%;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+.inputFields{
+    height: 100%;
+    width: 95%;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    background: none;
+}
+
+.icons{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.ButtonClose{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
     
+.closeButtonOne{
+    outline: none;
+    border: none;
+    font-size: 23px;
 }
